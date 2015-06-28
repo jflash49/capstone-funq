@@ -1,0 +1,51 @@
+[28-Jun-2015 14:10:00 UTC] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/ubuntu/workspace/app/AppKernel.php on line 20
+[28-Jun-2015 14:10:00 UTC] PHP Stack trace:
+[28-Jun-2015 14:10:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app.php:0
+[28-Jun-2015 14:43:14 UTC] PHP Fatal error:  Call to undefined function FunQ\Bundle\FunQBundle\Controller\vardump() in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/DefaultController.php on line 11
+[28-Jun-2015 14:43:14 UTC] PHP Stack trace:
+[28-Jun-2015 14:43:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 14:43:14 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 14:43:14 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 14:43:14 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 14:43:14 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 14:43:14 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 14:43:14 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\DefaultController->indexAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 14:56:45 UTC] PHP Fatal error:  Cannot redeclare FunQ\Bundle\FunQBundle\Controller\DefaultController::indexAction() in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/DefaultController.php on line 15
+[28-Jun-2015 14:56:45 UTC] PHP Stack trace:
+[28-Jun-2015 14:56:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 14:56:45 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 14:56:45 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 14:56:45 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 14:56:45 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 14:56:45 UTC] PHP   6. Symfony\Component\HttpKernel\Controller\TraceableControllerResolver->getController() /home/ubuntu/workspace/app/bootstrap.php.cache:2998
+[28-Jun-2015 14:56:45 UTC] PHP   7. Symfony\Component\HttpKernel\Controller\ControllerResolver->getController() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Controller/TraceableControllerResolver.php:46
+[28-Jun-2015 14:56:45 UTC] PHP   8. Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver->createController() /home/ubuntu/workspace/app/cache/dev/classes.php:2052
+[28-Jun-2015 14:56:45 UTC] PHP   9. class_exists() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[28-Jun-2015 14:56:45 UTC] PHP  10. spl_autoload_call() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[28-Jun-2015 14:56:45 UTC] PHP  11. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[28-Jun-2015 14:57:19 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/DefaultController.php on line 17
+[28-Jun-2015 14:57:19 UTC] PHP Stack trace:
+[28-Jun-2015 14:57:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 14:57:19 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 14:57:19 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 14:57:19 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 14:57:19 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 14:57:19 UTC] PHP   6. Symfony\Component\HttpKernel\Controller\TraceableControllerResolver->getController() /home/ubuntu/workspace/app/bootstrap.php.cache:2998
+[28-Jun-2015 14:57:19 UTC] PHP   7. Symfony\Component\HttpKernel\Controller\ControllerResolver->getController() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Controller/TraceableControllerResolver.php:46
+[28-Jun-2015 14:57:19 UTC] PHP   8. Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver->createController() /home/ubuntu/workspace/app/cache/dev/classes.php:2052
+[28-Jun-2015 14:57:19 UTC] PHP   9. class_exists() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[28-Jun-2015 14:57:19 UTC] PHP  10. spl_autoload_call() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[28-Jun-2015 14:57:19 UTC] PHP  11. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[28-Jun-2015 14:57:35 UTC] PHP Fatal error:  Cannot redeclare FunQ\Bundle\FunQBundle\Controller\DefaultController::indexAction() in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/DefaultController.php on line 15
+[28-Jun-2015 14:57:35 UTC] PHP Stack trace:
+[28-Jun-2015 14:57:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 14:57:35 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 14:57:35 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 14:57:35 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 14:57:35 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 14:57:35 UTC] PHP   6. Symfony\Component\HttpKernel\Controller\TraceableControllerResolver->getController() /home/ubuntu/workspace/app/bootstrap.php.cache:2998
+[28-Jun-2015 14:57:35 UTC] PHP   7. Symfony\Component\HttpKernel\Controller\ControllerResolver->getController() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Controller/TraceableControllerResolver.php:46
+[28-Jun-2015 14:57:35 UTC] PHP   8. Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver->createController() /home/ubuntu/workspace/app/cache/dev/classes.php:2052
+[28-Jun-2015 14:57:35 UTC] PHP   9. class_exists() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[28-Jun-2015 14:57:35 UTC] PHP  10. spl_autoload_call() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[28-Jun-2015 14:57:35 UTC] PHP  11. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/cache/dev/classes.php:2398

@@ -1,5 +1,5 @@
-fun_q_fun_q:
-    resource: "@FunQFunQBundle/Resources/config/routing.yml"
+fun_q:
+    resource: "@FunQBundle/Resources/config/routing.yml"
     prefix:   /
 
 app:

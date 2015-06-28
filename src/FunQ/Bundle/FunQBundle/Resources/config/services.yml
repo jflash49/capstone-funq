@@ -1,4 +1,4 @@
 services:
-#    fun_q_fun_q.example:
+#    fun_q.example:
 #        class: FunQ\Bundle\FunQBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]
