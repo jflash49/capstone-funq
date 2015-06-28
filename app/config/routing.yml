@@ -1,0 +1,7 @@
+fun_q_fun_q:
+    resource: "@FunQFunQBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation

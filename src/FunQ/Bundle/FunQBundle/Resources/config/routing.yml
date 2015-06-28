@@ -1,0 +1,3 @@
+funq_funq_homepage:
+    path:     /home/
+    defaults: { _controller: FunQFunQBundle:Default:index }
