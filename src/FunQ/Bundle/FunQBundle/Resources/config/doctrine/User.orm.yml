@@ -1,0 +1,39 @@
+FunQ\Bundle\FunQBundle\Entity\User:
+    type: entity
+    table: null
+    repositoryClass: FunQ\Bundle\FunQBundle\Entity\UserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        username:
+            type: string
+            length: 255
+            column: Username
+        firstName:
+            type: string
+            length: 255
+        lastName:
+            type: string
+            length: 255
+        birthdate:
+            type: date
+        gender:
+            type: string
+            length: '1'
+        school:
+            type: string
+            length: 255
+        class:
+            type: string
+            length: 255
+        iQ:
+            type: integer
+            column: IQ
+        password:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

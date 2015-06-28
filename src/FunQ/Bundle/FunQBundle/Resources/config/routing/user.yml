@@ -1,0 +1,30 @@
+user:
+    path:     /
+    defaults: { _controller: "FunQBundle:User:index" }
+
+user_show:
+    path:     /{id}/show
+    defaults: { _controller: "FunQBundle:User:show" }
+
+user_new:
+    path:     /new
+    defaults: { _controller: "FunQBundle:User:new" }
+
+user_create:
+    path:     /create
+    defaults: { _controller: "FunQBundle:User:create" }
+    methods:  POST
+
+user_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "FunQBundle:User:edit" }
+
+user_update:
+    path:     /{id}/update
+    defaults: { _controller: "FunQBundle:User:update" }
+    methods:  [POST, PUT]
+
+user_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "FunQBundle:User:delete" }
+    methods:  [POST, DELETE]

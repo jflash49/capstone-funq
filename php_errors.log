@@ -49,3 +49,1050 @@
 [28-Jun-2015 14:57:35 UTC] PHP   9. class_exists() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
 [28-Jun-2015 14:57:35 UTC] PHP  10. spl_autoload_call() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
 [28-Jun-2015 14:57:35 UTC] PHP  11. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[28-Jun-2015 16:12:42 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/DefaultController.php on line 18
+[28-Jun-2015 16:12:42 UTC] PHP Stack trace:
+[28-Jun-2015 16:12:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 16:12:42 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 16:12:42 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 16:12:42 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 16:12:42 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 16:12:42 UTC] PHP   6. Symfony\Component\HttpKernel\Controller\TraceableControllerResolver->getController() /home/ubuntu/workspace/app/bootstrap.php.cache:2998
+[28-Jun-2015 16:12:42 UTC] PHP   7. Symfony\Component\HttpKernel\Controller\ControllerResolver->getController() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Controller/TraceableControllerResolver.php:46
+[28-Jun-2015 16:12:42 UTC] PHP   8. Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver->createController() /home/ubuntu/workspace/app/cache/dev/classes.php:2052
+[28-Jun-2015 16:12:42 UTC] PHP   9. class_exists() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[28-Jun-2015 16:12:42 UTC] PHP  10. spl_autoload_call() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[28-Jun-2015 16:12:42 UTC] PHP  11. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[28-Jun-2015 18:31:26 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php line 64' in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/....', '/home/ubuntu/wo...', 64, Array)
+#1 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Doctrine\Common\Annotations\AnnotationRegistry::registerFile()
+#2 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(6): Doctrine\Common\Annotations\AnnotationRegistry::registerFile('/../vendor/d in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:31:26 UTC] PHP Stack trace:
+[28-Jun-2015 18:31:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:31:26 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:31:26 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:31:26 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:31:26 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:31:26 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:31:26 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:31:26 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:31:26 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:31:26 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:31:26 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:31:26 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:31:26 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:31:26 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:31:26 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:31:26 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:31:26 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:31:26 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:31:26 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:31:26 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:6
+[28-Jun-2015 18:31:26 UTC] PHP Fatal error:  Doctrine\Common\Annotations\AnnotationRegistry::registerFile(): Failed opening required '/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:31:26 UTC] PHP Stack trace:
+[28-Jun-2015 18:31:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:31:26 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:31:26 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:31:26 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:31:26 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:31:26 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:31:26 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:31:26 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:31:26 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:31:26 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:31:26 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:31:26 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:31:26 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:31:26 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:31:26 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:31:26 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:31:26 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:31:26 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:31:26 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:31:26 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:6
+[28-Jun-2015 18:31:42 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php line 64' in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(.....', '/home/ubuntu/wo...', 64, Array)
+#1 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Doctrine\Common\Annotations\AnnotationRegistry::registerFile()
+#2 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(6): Doctrine\Common\Annotations\AnnotationRegistry::registerFile('../vendor/doc in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:31:42 UTC] PHP Stack trace:
+[28-Jun-2015 18:31:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:31:42 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:31:42 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:31:42 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:31:42 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:31:42 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:31:42 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:31:42 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:31:42 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:31:42 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:31:42 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:31:42 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:31:42 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:31:42 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:31:42 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:31:42 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:31:42 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:31:42 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:31:42 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:31:42 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:6
+[28-Jun-2015 18:31:42 UTC] PHP Fatal error:  Doctrine\Common\Annotations\AnnotationRegistry::registerFile(): Failed opening required '../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:31:42 UTC] PHP Stack trace:
+[28-Jun-2015 18:31:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:31:42 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:31:42 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:31:42 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:31:42 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:31:42 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:31:42 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:31:42 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:31:42 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:31:42 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:31:42 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:31:42 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:31:42 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:31:42 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:31:42 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:31:42 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:31:42 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:31:42 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:31:42 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:31:42 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:6
+[28-Jun-2015 18:33:09 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php line 64' in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/v...', '/home/ubuntu/wo...', 64, Array)
+#1 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Doctrine\Common\Annotations\AnnotationRegistry::registerFile()
+#2 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(7): Doctrine\Common\Annotations\AnnotationRegistry::registerFile('/vendor/doctrin in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:33:09 UTC] PHP Stack trace:
+[28-Jun-2015 18:33:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:33:09 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:33:09 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:33:09 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:33:09 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:33:09 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:33:09 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:33:09 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:33:09 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:33:09 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:33:09 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:33:09 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:33:09 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:33:09 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:33:09 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:33:09 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:09 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:09 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:09 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:33:09 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:7
+[28-Jun-2015 18:33:09 UTC] PHP Fatal error:  Doctrine\Common\Annotations\AnnotationRegistry::registerFile(): Failed opening required '/vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:33:09 UTC] PHP Stack trace:
+[28-Jun-2015 18:33:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:33:09 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:33:09 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:33:09 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:33:09 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:33:09 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:33:09 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:33:09 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:33:09 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:33:09 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:33:09 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:33:09 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:33:09 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:33:09 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:33:09 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:33:09 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:09 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:09 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:09 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:33:09 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:7
+[28-Jun-2015 18:33:44 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(\vendor\doctrine\lib\Doctrine\ORM\Mapping\Driver\DoctrineAnnotations.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php line 64' in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(\v...', '/home/ubuntu/wo...', 64, Array)
+#1 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Doctrine\Common\Annotations\AnnotationRegistry::registerFile()
+#2 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(7): Doctrine\Common\Annotations\AnnotationRegistry::registerFile('\vendor\doctrin in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:33:44 UTC] PHP Stack trace:
+[28-Jun-2015 18:33:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:33:44 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:33:44 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:33:44 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:33:44 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:33:44 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:33:44 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:33:44 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:33:44 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:33:44 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:33:44 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:33:44 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:33:44 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:33:44 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:33:44 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:33:44 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:44 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:44 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:44 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:33:44 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:7
+[28-Jun-2015 18:33:44 UTC] PHP Fatal error:  Doctrine\Common\Annotations\AnnotationRegistry::registerFile(): Failed opening required '\vendor\doctrine\lib\Doctrine\ORM\Mapping\Driver\DoctrineAnnotations.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:33:44 UTC] PHP Stack trace:
+[28-Jun-2015 18:33:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:33:44 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:33:44 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:33:44 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:33:44 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:33:44 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:33:44 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:33:44 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:33:44 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:33:44 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:33:44 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:33:44 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:33:44 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:33:44 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:33:44 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:33:44 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:44 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:44 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:44 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:33:44 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:7
+[28-Jun-2015 18:33:56 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(::\vendor\doctrine\lib\Doctrine\ORM\Mapping\Driver\DoctrineAnnotations.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php line 64' in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(::...', '/home/ubuntu/wo...', 64, Array)
+#1 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Doctrine\Common\Annotations\AnnotationRegistry::registerFile()
+#2 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(7): Doctrine\Common\Annotations\AnnotationRegistry::registerFile('::\vendor\doc in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:33:56 UTC] PHP Stack trace:
+[28-Jun-2015 18:33:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:33:56 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:33:56 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:33:56 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:33:56 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:33:56 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:33:56 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:33:56 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:33:56 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:33:56 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:33:56 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:33:56 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:33:56 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:33:56 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:33:56 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:33:56 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:56 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:56 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:56 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:33:56 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:7
+[28-Jun-2015 18:33:56 UTC] PHP Fatal error:  Doctrine\Common\Annotations\AnnotationRegistry::registerFile(): Failed opening required '::\vendor\doctrine\lib\Doctrine\ORM\Mapping\Driver\DoctrineAnnotations.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:33:56 UTC] PHP Stack trace:
+[28-Jun-2015 18:33:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:33:56 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:33:56 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:33:56 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:33:56 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:33:56 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:33:56 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:33:56 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:33:56 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:33:56 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:33:56 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:33:56 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:33:56 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:33:56 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:33:56 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:33:56 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:56 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:56 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:33:56 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:33:56 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:7
+[28-Jun-2015 18:34:05 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(\..\vendor\doctrine\lib\Doctrine\ORM\Mapping\Driver\DoctrineAnnotations.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php line 64' in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(\....', '/home/ubuntu/wo...', 64, Array)
+#1 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Doctrine\Common\Annotations\AnnotationRegistry::registerFile()
+#2 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(7): Doctrine\Common\Annotations\AnnotationRegistry::registerFile('\..\vendor\d in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:34:05 UTC] PHP Stack trace:
+[28-Jun-2015 18:34:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:34:05 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:34:05 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:34:05 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:34:05 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:34:05 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:34:05 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:34:05 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:34:05 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:34:05 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:34:05 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:34:05 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:34:05 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:34:05 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:34:05 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:34:05 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:34:05 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:34:05 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:34:05 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:34:05 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:7
+[28-Jun-2015 18:34:05 UTC] PHP Fatal error:  Doctrine\Common\Annotations\AnnotationRegistry::registerFile(): Failed opening required '\..\vendor\doctrine\lib\Doctrine\ORM\Mapping\Driver\DoctrineAnnotations.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:34:05 UTC] PHP Stack trace:
+[28-Jun-2015 18:34:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:34:05 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:34:05 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:34:05 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:34:05 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:34:05 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:34:05 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:34:05 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:34:05 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:34:05 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:34:05 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:34:05 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:34:05 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:34:05 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:34:05 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:34:05 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:34:05 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:34:05 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:34:05 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:34:05 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:7
+[28-Jun-2015 18:35:19 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(~/workspace/vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php line 64' in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(~/...', '/home/ubuntu/wo...', 64, Array)
+#1 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Doctrine\Common\Annotations\AnnotationRegistry::registerFile()
+#2 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(7): Doctrine\Common\Annotations\AnnotationRegistry::registerFile('~/wo in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:35:19 UTC] PHP Stack trace:
+[28-Jun-2015 18:35:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:35:19 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:35:19 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:35:19 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:35:19 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:35:19 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:35:19 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:35:19 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:35:19 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:35:19 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:35:19 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:35:19 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:35:19 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:35:19 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:35:19 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:35:19 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:35:19 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:35:19 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:35:19 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:35:19 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:7
+[28-Jun-2015 18:35:19 UTC] PHP Fatal error:  Doctrine\Common\Annotations\AnnotationRegistry::registerFile(): Failed opening required '~/workspace/vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:35:19 UTC] PHP Stack trace:
+[28-Jun-2015 18:35:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:35:19 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:35:19 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:35:19 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:35:19 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:35:19 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:35:19 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:35:19 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:35:19 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:35:19 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:35:19 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:35:19 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:35:19 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:35:19 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:35:19 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:35:19 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:35:19 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:35:19 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:35:19 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:35:19 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:7
+[28-Jun-2015 18:42:20 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php line 64' in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/v...', '/home/ubuntu/wo...', 64, Array)
+#1 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Doctrine\Common\Annotations\AnnotationRegistry::registerFile()
+#2 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(6): Doctrine\Common\Annotations\AnnotationRegistry::registerFile('/vendor/doctrin in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:42:20 UTC] PHP Stack trace:
+[28-Jun-2015 18:42:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:42:20 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:42:20 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:42:20 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:42:20 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:42:20 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:42:20 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:42:20 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:42:20 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:42:20 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:42:20 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:42:20 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:42:20 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:42:20 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:42:20 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:42:20 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:42:20 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:42:20 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:42:20 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:42:20 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:6
+[28-Jun-2015 18:42:20 UTC] PHP Fatal error:  Doctrine\Common\Annotations\AnnotationRegistry::registerFile(): Failed opening required '/vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:42:20 UTC] PHP Stack trace:
+[28-Jun-2015 18:42:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:42:20 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:42:20 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:42:20 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:42:20 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:42:20 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:42:20 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:42:20 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:42:20 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:42:20 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:42:20 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:42:20 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:42:20 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:42:20 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:42:20 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:42:20 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:42:20 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:42:20 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:42:20 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:42:20 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:6
+[28-Jun-2015 18:44:00 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php line 64' in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/....', '/home/ubuntu/wo...', 64, Array)
+#1 /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php(64): Doctrine\Common\Annotations\AnnotationRegistry::registerFile()
+#2 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(6): Doctrine\Common\Annotations\AnnotationRegistry::registerFile('/../vendor/d in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:44:00 UTC] PHP Stack trace:
+[28-Jun-2015 18:44:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:44:00 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:44:00 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:44:00 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:44:00 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:44:00 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:44:00 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:44:00 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:44:00 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:44:00 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:44:00 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:44:00 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:44:00 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:44:00 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:44:00 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:44:00 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:44:00 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:44:00 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:44:00 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:44:00 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:6
+[28-Jun-2015 18:44:00 UTC] PHP Fatal error:  Doctrine\Common\Annotations\AnnotationRegistry::registerFile(): Failed opening required '/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php on line 64
+[28-Jun-2015 18:44:00 UTC] PHP Stack trace:
+[28-Jun-2015 18:44:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 18:44:00 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 18:44:00 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 18:44:00 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 18:44:00 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 18:44:00 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:44:00 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->editAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 18:44:00 UTC] PHP   8. Doctrine\ORM\EntityManager->getRepository() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:120
+[28-Jun-2015 18:44:00 UTC] PHP   9. Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:665
+[28-Jun-2015 18:44:00 UTC] PHP  10. Doctrine\ORM\Repository\DefaultRepositoryFactory->createRepository() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:50
+[28-Jun-2015 18:44:00 UTC] PHP  11. Doctrine\ORM\EntityManager->getClassMetadata() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:67
+[28-Jun-2015 18:44:00 UTC] PHP  12. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:265
+[28-Jun-2015 18:44:00 UTC] PHP  13. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:211
+[28-Jun-2015 18:44:00 UTC] PHP  14. Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:297
+[28-Jun-2015 18:44:00 UTC] PHP  15. Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php:267
+[28-Jun-2015 18:44:00 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:44:00 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:44:00 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[28-Jun-2015 18:44:00 UTC] PHP  19. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 18:44:00 UTC] PHP  20. Doctrine\Common\Annotations\AnnotationRegistry::registerFile() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:6
+[28-Jun-2015 19:13:47 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 5' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 5, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 19:13:47 UTC] PHP Stack trace:
+[28-Jun-2015 19:13:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:13:47 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:13:47 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:13:47 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:13:47 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:13:47 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:13:47 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:13:47 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:13:47 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:13:47 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:13:47 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 64
+[28-Jun-2015 19:13:47 UTC] PHP Stack trace:
+[28-Jun-2015 19:13:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:13:47 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:13:47 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:13:47 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:13:47 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:13:47 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:13:47 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:13:47 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:13:47 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:13:47 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:14:29 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 5' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 5, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 19:14:29 UTC] PHP Stack trace:
+[28-Jun-2015 19:14:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:14:29 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:14:29 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:14:29 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:14:29 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:14:29 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:14:29 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:14:29 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:14:29 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:14:29 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:14:29 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 64
+[28-Jun-2015 19:14:29 UTC] PHP Stack trace:
+[28-Jun-2015 19:14:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:14:29 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:14:29 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:14:29 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:14:29 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:14:29 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:14:29 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:14:29 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:14:29 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:14:29 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:15:19 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 5' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 5, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 19:15:19 UTC] PHP Stack trace:
+[28-Jun-2015 19:15:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:15:19 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:15:19 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:15:19 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:15:19 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:15:19 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:15:19 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:15:19 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:15:19 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:15:19 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:15:19 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 64
+[28-Jun-2015 19:15:19 UTC] PHP Stack trace:
+[28-Jun-2015 19:15:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:15:19 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:15:19 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:15:19 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:15:19 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:15:19 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:15:19 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:15:19 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:15:19 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:15:19 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:15:41 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 5' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 5, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 19:15:41 UTC] PHP Stack trace:
+[28-Jun-2015 19:15:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:15:41 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:15:41 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:15:41 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:15:41 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:15:41 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:15:41 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:15:41 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:15:41 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:15:41 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:15:41 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 64
+[28-Jun-2015 19:15:41 UTC] PHP Stack trace:
+[28-Jun-2015 19:15:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:15:41 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:15:41 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:15:41 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:15:41 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:15:41 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:15:41 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:15:41 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:15:41 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:15:41 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:16:29 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 5' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 5, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 19:16:29 UTC] PHP Stack trace:
+[28-Jun-2015 19:16:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:16:29 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:16:29 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:16:29 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:16:29 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:16:29 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:16:29 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:16:29 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:16:29 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:16:29 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:16:29 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 64
+[28-Jun-2015 19:16:29 UTC] PHP Stack trace:
+[28-Jun-2015 19:16:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:16:29 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:16:29 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:16:29 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:16:29 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:16:29 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:16:29 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:16:29 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:16:29 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:16:29 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:38:59 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 5' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 5, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 19:38:59 UTC] PHP Stack trace:
+[28-Jun-2015 19:38:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:38:59 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:38:59 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:38:59 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:38:59 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:38:59 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:38:59 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:38:59 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:38:59 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:38:59 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:38:59 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 64
+[28-Jun-2015 19:38:59 UTC] PHP Stack trace:
+[28-Jun-2015 19:38:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:38:59 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:38:59 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:38:59 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:38:59 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:38:59 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:38:59 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:38:59 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:38:59 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:38:59 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:41:51 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 5' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 5, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 19:41:51 UTC] PHP Stack trace:
+[28-Jun-2015 19:41:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:41:51 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:41:51 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:41:51 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:41:51 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:41:51 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:41:51 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:41:51 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:41:51 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:41:51 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:41:51 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 64
+[28-Jun-2015 19:41:51 UTC] PHP Stack trace:
+[28-Jun-2015 19:41:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:41:51 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:41:51 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:41:51 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:41:51 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:41:51 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:41:51 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:41:51 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:41:51 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:41:51 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:43:00 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 5' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 5, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 19:43:00 UTC] PHP Stack trace:
+[28-Jun-2015 19:43:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:43:00 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:43:00 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:43:00 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:43:00 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:43:00 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:43:00 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:43:00 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:43:00 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:43:00 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:43:00 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 64
+[28-Jun-2015 19:43:00 UTC] PHP Stack trace:
+[28-Jun-2015 19:43:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:43:00 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:43:00 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:43:00 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:43:00 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:43:00 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:43:00 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:43:00 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:43:00 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:43:00 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:43:52 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 5' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 5, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 19:43:52 UTC] PHP Stack trace:
+[28-Jun-2015 19:43:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:43:52 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:43:52 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:43:52 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:43:52 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:43:52 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:43:52 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:43:52 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:43:52 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:43:52 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:43:52 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 64
+[28-Jun-2015 19:43:52 UTC] PHP Stack trace:
+[28-Jun-2015 19:43:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:43:52 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:43:52 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:43:52 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:43:52 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:43:52 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:43:52 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:43:52 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:43:52 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:43:52 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:44:24 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 5' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 5, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 19:44:24 UTC] PHP Stack trace:
+[28-Jun-2015 19:44:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:44:24 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:44:24 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:44:24 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:44:24 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:44:24 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:44:24 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:44:24 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:44:24 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:44:24 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:44:24 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 64
+[28-Jun-2015 19:44:24 UTC] PHP Stack trace:
+[28-Jun-2015 19:44:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:44:24 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:44:24 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:44:24 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:44:24 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:44:24 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:44:24 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:44:24 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:44:24 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:44:24 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:48:29 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/Common/Annotations/AnnotationRegistry.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 4' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:4
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(4): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 4, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(4): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserContr in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 4
+[28-Jun-2015 19:48:29 UTC] PHP Stack trace:
+[28-Jun-2015 19:48:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:48:29 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:48:29 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:48:29 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:48:29 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:48:29 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:48:29 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:48:29 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:48:29 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:48:29 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:48:29 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/Common/Annotations/AnnotationRegistry.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 64
+[28-Jun-2015 19:48:29 UTC] PHP Stack trace:
+[28-Jun-2015 19:48:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:48:29 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:48:29 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:48:29 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:48:29 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:48:29 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:48:29 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:48:29 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:48:29 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:48:29 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:49:13 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 5' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 5, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 19:49:13 UTC] PHP Stack trace:
+[28-Jun-2015 19:49:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:49:13 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:49:13 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:49:13 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:49:13 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:49:13 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:49:13 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:49:13 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:49:13 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:49:13 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:49:13 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 64
+[28-Jun-2015 19:49:13 UTC] PHP Stack trace:
+[28-Jun-2015 19:49:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:49:13 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:49:13 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:49:13 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:49:13 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:49:13 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:49:13 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:49:13 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:49:13 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:49:13 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:57:36 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/Common/Annotations/AnnotationRegistry.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 4' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:4
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(4): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 4, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(4): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserContr in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 4
+[28-Jun-2015 19:57:36 UTC] PHP Stack trace:
+[28-Jun-2015 19:57:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:57:36 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:57:36 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:57:36 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:57:36 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:57:36 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:57:36 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:57:36 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:57:36 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:57:36 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:57:36 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/Common/Annotations/AnnotationRegistry.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 4
+[28-Jun-2015 19:57:36 UTC] PHP Stack trace:
+[28-Jun-2015 19:57:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:57:36 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:57:36 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:57:36 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:57:36 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:57:36 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:57:36 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:57:36 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:57:36 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:57:36 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:57:47 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 5' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 5, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 19:57:47 UTC] PHP Stack trace:
+[28-Jun-2015 19:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:57:47 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:57:47 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:57:47 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:57:47 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:57:47 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:57:47 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:57:47 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:57:47 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:57:47 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:57:47 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 19:57:47 UTC] PHP Stack trace:
+[28-Jun-2015 19:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:57:47 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:57:47 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:57:47 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:57:47 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:57:47 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:57:47 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:57:47 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:57:47 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:57:47 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:58:05 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 5' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 5, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 19:58:05 UTC] PHP Stack trace:
+[28-Jun-2015 19:58:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:58:05 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:58:05 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:58:05 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:58:05 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:58:05 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:58:05 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:58:05 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:58:05 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:58:05 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 19:58:05 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 19:58:05 UTC] PHP Stack trace:
+[28-Jun-2015 19:58:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 19:58:05 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 19:58:05 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 19:58:05 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 19:58:05 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 19:58:05 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:58:05 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 19:58:05 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:58:05 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 19:58:05 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 20:00:10 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/vendor/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/vendor/autoload.php on line 6
+[28-Jun-2015 20:00:10 UTC] PHP Stack trace:
+[28-Jun-2015 20:00:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 20:00:10 UTC] PHP   2. require_once() /home/ubuntu/workspace/web/app_dev.php:20
+[28-Jun-2015 20:00:10 UTC] PHP   3. require_once() /home/ubuntu/workspace/app/bootstrap.php.cache:3
+[28-Jun-2015 20:00:10 UTC] PHP   4. require() /home/ubuntu/workspace/app/autoload.php:9
+[28-Jun-2015 20:00:10 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/vendor/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/vendor/autoload.php on line 6
+[28-Jun-2015 20:00:10 UTC] PHP Stack trace:
+[28-Jun-2015 20:00:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 20:00:10 UTC] PHP   2. require_once() /home/ubuntu/workspace/web/app_dev.php:20
+[28-Jun-2015 20:00:10 UTC] PHP   3. require_once() /home/ubuntu/workspace/app/bootstrap.php.cache:3
+[28-Jun-2015 20:00:10 UTC] PHP   4. require() /home/ubuntu/workspace/app/autoload.php:9
+[28-Jun-2015 20:01:04 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/app/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/app/autoload.php on line 10
+[28-Jun-2015 20:01:04 UTC] PHP Stack trace:
+[28-Jun-2015 20:01:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 20:01:04 UTC] PHP   2. require_once() /home/ubuntu/workspace/web/app_dev.php:20
+[28-Jun-2015 20:01:04 UTC] PHP   3. require_once() /home/ubuntu/workspace/app/bootstrap.php.cache:3
+[28-Jun-2015 20:01:04 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/app/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/app/autoload.php on line 10
+[28-Jun-2015 20:01:04 UTC] PHP Stack trace:
+[28-Jun-2015 20:01:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 20:01:04 UTC] PHP   2. require_once() /home/ubuntu/workspace/web/app_dev.php:20
+[28-Jun-2015 20:01:04 UTC] PHP   3. require_once() /home/ubuntu/workspace/app/bootstrap.php.cache:3
+[28-Jun-2015 20:01:13 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/app/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/app/autoload.php on line 10
+[28-Jun-2015 20:01:13 UTC] PHP Stack trace:
+[28-Jun-2015 20:01:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 20:01:13 UTC] PHP   2. require_once() /home/ubuntu/workspace/web/app_dev.php:20
+[28-Jun-2015 20:01:13 UTC] PHP   3. require_once() /home/ubuntu/workspace/app/bootstrap.php.cache:3
+[28-Jun-2015 20:01:13 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/app/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/app/autoload.php on line 10
+[28-Jun-2015 20:01:13 UTC] PHP Stack trace:
+[28-Jun-2015 20:01:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 20:01:13 UTC] PHP   2. require_once() /home/ubuntu/workspace/web/app_dev.php:20
+[28-Jun-2015 20:01:13 UTC] PHP   3. require_once() /home/ubuntu/workspace/app/bootstrap.php.cache:3
+[28-Jun-2015 20:06:35 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 5' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 5, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(5): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 20:06:35 UTC] PHP Stack trace:
+[28-Jun-2015 20:06:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 20:06:35 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 20:06:35 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 20:06:35 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 20:06:35 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 20:06:35 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 20:06:35 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 20:06:35 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 20:06:35 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 20:06:35 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 20:06:35 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 5
+[28-Jun-2015 20:06:35 UTC] PHP Stack trace:
+[28-Jun-2015 20:06:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 20:06:35 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 20:06:35 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 20:06:35 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 20:06:35 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 20:06:35 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 20:06:35 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 20:06:35 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 20:06:35 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 20:06:35 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 20:06:47 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 7' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:7
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(7): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 7, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(7): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 7
+[28-Jun-2015 20:06:47 UTC] PHP Stack trace:
+[28-Jun-2015 20:06:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 20:06:47 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 20:06:47 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 20:06:47 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 20:06:47 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 20:06:47 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 20:06:47 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 20:06:47 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 20:06:47 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 20:06:47 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 20:06:47 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 7
+[28-Jun-2015 20:06:47 UTC] PHP Stack trace:
+[28-Jun-2015 20:06:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 20:06:47 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 20:06:47 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 20:06:47 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 20:06:47 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 20:06:47 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 20:06:47 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 20:06:47 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 20:06:47 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 20:06:47 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 20:06:55 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 8' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:8
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(8): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 8, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(8): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 8
+[28-Jun-2015 20:06:55 UTC] PHP Stack trace:
+[28-Jun-2015 20:06:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 20:06:55 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 20:06:55 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 20:06:55 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 20:06:55 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 20:06:55 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 20:06:55 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 20:06:55 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 20:06:55 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 20:06:55 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 20:06:55 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 4
+[28-Jun-2015 20:06:55 UTC] PHP Stack trace:
+[28-Jun-2015 20:06:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 20:06:55 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 20:06:55 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 20:06:55 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 20:06:55 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 20:06:55 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 20:06:55 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 20:06:55 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 20:06:55 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 20:06:55 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 20:07:18 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require_once(/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php line 4' in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php:4
+Stack trace:
+#0 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(4): Symfony\Component\Debug\ErrorHandler->handle(2, 'require_once(/h...', '/home/ubuntu/wo...', 4, Array)
+#1 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php(4): require_once()
+#2 /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php(150): require('/home/ubuntu/wo...')
+#3 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('FunQ\Bundle\Fun...')
+#4 /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserControl in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 4
+[28-Jun-2015 20:07:18 UTC] PHP Stack trace:
+[28-Jun-2015 20:07:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 20:07:18 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 20:07:18 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 20:07:18 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 20:07:18 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 20:07:18 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 20:07:18 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 20:07:18 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 20:07:18 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 20:07:18 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[28-Jun-2015 20:07:18 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Entity/User.php on line 4
+[28-Jun-2015 20:07:18 UTC] PHP Stack trace:
+[28-Jun-2015 20:07:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[28-Jun-2015 20:07:18 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[28-Jun-2015 20:07:18 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[28-Jun-2015 20:07:18 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[28-Jun-2015 20:07:18 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[28-Jun-2015 20:07:18 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 20:07:18 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[28-Jun-2015 20:07:18 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 20:07:18 UTC] PHP   9. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/bootstrap.php.cache:81
+[28-Jun-2015 20:07:18 UTC] PHP  10. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
