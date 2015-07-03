@@ -70,7 +70,7 @@ class User
      private $parish;
      
      /**
-     * @ORM\Column(name="UserType",type="string", length=255, nullable=true)
+     * @ORM\Column(name="UserType",type="string", length=1, nullable=true)
      * @var string
      */
      private $userType;

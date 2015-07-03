@@ -3,6 +3,8 @@ fun_q_user:
     prefix:   /user
 
 
+
+
 #kill prefix to / for future..
 fun_q_homepage:
     path:     /hello/{name}/{count}

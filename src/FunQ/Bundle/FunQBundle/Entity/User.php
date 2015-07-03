@@ -70,7 +70,7 @@ class User
      private $parish;
      
      /**
-     * @ORM\Column(name="UserType",type="string", length=255, nullable=true)
+     * @ORM\Column(name="UserType",type="string", length=1, nullable=true)
      * @var string
      */
      private $userType;
@@ -326,5 +326,28 @@ class User
     public function getParish()
     {
         return $this->parish;
+    }
+
+    /**
+     * Set userType
+     *
+     * @param string $userType
+     * @return User
+     */
+    public function setUserType($userType)
+    {
+        $this->userType = $userType;
+
+        return $this;
+    }
+
+    /**
+     * Get userType
+     *
+     * @return string 
+     */
+    public function getUserType()
+    {
+        return $this->userType;
     }
 }
