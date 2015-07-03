@@ -23,11 +23,14 @@ FunQ\Bundle\FunQBundle\Entity\User:
             type: date
         gender:
             type: string
-            length: '1'
+            length: 2
         school:
             type: string
             length: 255
         class:
+            type: string
+            length: 255
+        parish:
             type: string
             length: 255
         iQ:

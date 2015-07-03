@@ -2,6 +2,8 @@ fun_q_user:
     resource: "@FunQBundle/Resources/config/routing/user.yml"
     prefix:   /user
 
+
+#kill prefix to / for future..
 fun_q_homepage:
     path:     /hello/{name}/{count}
     defaults: { _controller: FunQBundle:Default:index }
