@@ -5,7 +5,10 @@ fun_q_user:
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ac50c402d025744d58e6bf65c3578fb94b8661b2
 #kill prefix to / for future..
 fun_q_homepage:
     path:     /hello/{name}/{count}
