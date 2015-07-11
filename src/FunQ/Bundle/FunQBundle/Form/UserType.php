@@ -23,6 +23,7 @@ class UserType extends AbstractType
             ->add('school')
             ->add('class')
             ->add('parish')
+            ->add('userType')
             ->add('iQ')
             ->add('password')
         ;

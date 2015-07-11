@@ -33,6 +33,9 @@ FunQ\Bundle\FunQBundle\Entity\User:
         parish:
             type: string
             length: 255
+        userType:
+            type: string
+            length: 1
         iQ:
             type: integer
             column: IQ

@@ -5,3 +5,7 @@ fun_q:
 app:
     resource: @AppBundle/Controller/
     type:     annotation
+
+user_routes:
+    resource: "@UserBundle/Controller"
+    type: annotation
