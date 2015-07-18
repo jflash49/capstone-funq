@@ -19,4 +19,7 @@ FunQ\UserBundle\Entity\UserBundle:
             type: json_array
         isActive:
             type: boolean
+        email:
+            type: string
+            length: 255
     lifecycleCallbacks: {  }

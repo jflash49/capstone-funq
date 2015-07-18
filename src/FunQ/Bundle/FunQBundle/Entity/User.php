@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * 
  * @ORM\Table (name="User")
- * 
+ * @ORM\Table (repositoryClass="FunQ\Bundle\FunQBundle\Entity\UserRepository")
  */
 class User
 {

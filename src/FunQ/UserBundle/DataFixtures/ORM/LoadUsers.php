@@ -18,6 +18,8 @@ class LoadUsers implements FixtureInterface, ContainerAwareInterface
         $user->setUsername('darth');
         // todo - fill in this encoded password... ya know... somehow...
         $user->setPassword($this-> encodePassword($user,'darthpass'));
+        $user->setEmail('darth@deathstar.com');
+        $admin->setEmail('wayne@deathstar.com');
        // $admin->setIsActive(false);
         $manager->persist($user);
         

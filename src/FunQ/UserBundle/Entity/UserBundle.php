@@ -4,10 +4,13 @@ namespace FunQ\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\AdvancedUserInterface;
+use Serializable;
 /**
  * @ORM\ Table (name="UserBundle")
+ * @ORM\ Entity(repositoryClass="FunQ\UserBundle\Entity\UserBundleRepository")
  */
-class UserBundle implements AdvancedUserInterface
+ 
+class UserBundle implements AdvancedUserInterface, Serializable
 {
     /**
      * @var integer
@@ -51,6 +54,11 @@ class UserBundle implements AdvancedUserInterface
     {
         return $this->id;
     }
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $email;
 
     /**
      * Set username
@@ -181,5 +189,45 @@ class UserBundle implements AdvancedUserInterface
     public function isEnabled()
     {
         return $this->getIsActive();
+    }
+
+    /**
+     * Set email
+     *
+     * @param string $email
+     * @return UserBundle
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    /**
+     * Get email
+     *
+     * @return string 
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+    public function serialize()
+    {
+        return serialize(array(
+        $this->id,
+        $this->username,
+        $this->password,
+    ));
+    }
+
+    public function unserialize($serialized)
+    {
+        list (
+        $this->id,
+        $this->username,
+        $this->password,
+    ) = unserialize($serialized);
     }
 }

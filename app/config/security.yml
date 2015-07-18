@@ -18,7 +18,7 @@ security:
     # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
     providers:
         our_database_users:
-            entity: { class: UserBundle:UserBundle, property: username }
+            entity: { class: UserBundle:UserBundle }
         #in_memory:
         #    memory:
         #        users:
