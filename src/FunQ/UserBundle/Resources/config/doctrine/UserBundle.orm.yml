@@ -1,7 +1,7 @@
-FunQ\UserBundle\Entity\User:
+FunQ\UserBundle\Entity\UserBundle:
     type: entity
     table: null
-    repositoryClass: FunQ\UserBundle\Entity\UserRepository
+    repositoryClass: FunQ\UserBundle\Entity\UserBundleRepository
     id:
         id:
             type: integer
@@ -15,4 +15,8 @@ FunQ\UserBundle\Entity\User:
         password:
             type: string
             length: 255
+        roles:
+            type: json_array
+        isActive:
+            type: boolean
     lifecycleCallbacks: {  }
