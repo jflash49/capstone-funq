@@ -38,6 +38,8 @@ class UserController extends Controller
         $entity = new User();
         $form = $this->createCreateForm($entity);
         $form->handleRequest($request);
+        
+         $this->enforceUserSecurity();
 
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
@@ -78,9 +80,10 @@ class UserController extends Controller
      */
     public function newAction()
     {
+        $this->enforceUserSecurity();
+        
         $entity = new User();
         $form   = $this->createCreateForm($entity);
-
         return $this->render('FunQBundle:User:new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
@@ -115,6 +118,7 @@ class UserController extends Controller
      */
     public function editAction($id)
     {
+        $this->enforceUserSecurity();
         $em = $this->getDoctrine()->getManager();
 
         $entity = $em->getRepository('FunQBundle:User')->find($id);
@@ -157,8 +161,9 @@ class UserController extends Controller
      */
     public function updateAction(Request $request, $id)
     {
+        $this->enforceUserSecurity();
         $em = $this->getDoctrine()->getManager();
-
+        
         $entity = $em->getRepository('FunQBundle:User')->find($id);
 
         if (!$entity) {
@@ -187,6 +192,7 @@ class UserController extends Controller
      */
     public function deleteAction(Request $request, $id)
     {
+        $this->enforceUserSecurity();
         $form = $this->createDeleteForm($id);
         $form->handleRequest($request);
 
@@ -221,4 +227,12 @@ class UserController extends Controller
             ->getForm()
         ;
     }
+    
+    private function enforceUserSecurity()
+    {
+        $securityContext = $this->container->get('security.context');
+        if (!$securityContext->isGranted('ROLE_USER')) {
+            throw new AccessDeniedException('Need ROLE_USER!');
+    }
+}
 }

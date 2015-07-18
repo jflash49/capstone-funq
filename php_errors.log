@@ -1176,3 +1176,21 @@ Stack trace:
 [28-Jun-2015 20:40:16 UTC] PHP  16. class_exists() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
 [28-Jun-2015 20:40:16 UTC] PHP  17. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
 [28-Jun-2015 20:40:16 UTC] PHP  18. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:42
+[11-Jul-2015 15:59:55 UTC] PHP Fatal error:  Call to undefined method FunQ\Bundle\FunQBundle\Controller\UserController::creatAccessDeniedException() in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php on line 86
+[11-Jul-2015 15:59:55 UTC] PHP Stack trace:
+[11-Jul-2015 15:59:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[11-Jul-2015 15:59:55 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[11-Jul-2015 15:59:55 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[11-Jul-2015 15:59:55 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[11-Jul-2015 15:59:55 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[11-Jul-2015 15:59:55 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[11-Jul-2015 15:59:55 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[11-Jul-2015 15:59:57 UTC] PHP Fatal error:  Call to undefined method FunQ\Bundle\FunQBundle\Controller\UserController::creatAccessDeniedException() in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php on line 86
+[11-Jul-2015 15:59:57 UTC] PHP Stack trace:
+[11-Jul-2015 15:59:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[11-Jul-2015 15:59:57 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[11-Jul-2015 15:59:57 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[11-Jul-2015 15:59:57 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[11-Jul-2015 15:59:57 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[11-Jul-2015 15:59:57 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[11-Jul-2015 15:59:57 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
