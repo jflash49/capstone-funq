@@ -7,7 +7,8 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
 
-use FunQ\UserBundle\UserBundle;
+use FunQ\UserBundle\Entity\UserBundle;
+use FunQ\UserBundle\Form\RegisterFormType;
 
 class RegisterController extends Controller
 {
@@ -17,20 +18,22 @@ class RegisterController extends Controller
      */ 
     public function registerAction(Request $request)
     {
-        $form = $this->createFormBuilder()
-            ->add('username', 'text')
+        $defaultuser = new UserBundle();
+        $defaultuser->setUsername('Leia');
+        
+        $form = $this->createForm(new RegisterFormType(),$defaultuser);
+           /* ->add('username', 'text')
             ->add('email', 'email')
-            ->add('password', 'repeated', array( 'type' =>'password',))
+            ->add('plainPassword', 'repeated', array( 'type' =>'password',))
             ->getForm() 
-        ;
+        ;*/
         $form->handleRequest($request);
         if ($form->isValid()){
             $data = $form->getData();
             
-            $user= new UserBundle();
-            $user->setUsername($data['username']);
-            $user->setEmail($data['email']);
-            $user->setPassword($this->encodePassword($user, $data['password']));
+            $user->setPassword(
+                $this->encodePassword($user, $user->getPlainPassword())
+                );
 
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);

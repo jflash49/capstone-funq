@@ -1284,3 +1284,66 @@ Stack trace:
 [18-Jul-2015 21:02:37 UTC] PHP  24. spl_autoload_call() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:75
 [18-Jul-2015 21:02:37 UTC] PHP  25. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php:75
 [18-Jul-2015 21:02:37 UTC] PHP  26. require() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:150
+[18-Jul-2015 22:41:48 UTC] PHP Fatal error:  Call to undefined method FunQ\UserBundle\UserBundle::setUsername() in /home/ubuntu/workspace/src/FunQ/UserBundle/Controller/RegisterController.php on line 21
+[18-Jul-2015 22:41:48 UTC] PHP Stack trace:
+[18-Jul-2015 22:41:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[18-Jul-2015 22:41:48 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[18-Jul-2015 22:41:48 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[18-Jul-2015 22:41:48 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[18-Jul-2015 22:41:48 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[18-Jul-2015 22:41:48 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[18-Jul-2015 22:41:48 UTC] PHP   7. FunQ\UserBundle\Controller\RegisterController->registerAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[18-Jul-2015 22:43:32 UTC] PHP Fatal error:  Call to undefined method FunQ\UserBundle\UserBundle::setUsername() in /home/ubuntu/workspace/src/FunQ/UserBundle/Controller/RegisterController.php on line 21
+[18-Jul-2015 22:43:32 UTC] PHP Stack trace:
+[18-Jul-2015 22:43:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[18-Jul-2015 22:43:32 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[18-Jul-2015 22:43:32 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[18-Jul-2015 22:43:32 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[18-Jul-2015 22:43:32 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[18-Jul-2015 22:43:32 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[18-Jul-2015 22:43:32 UTC] PHP   7. FunQ\UserBundle\Controller\RegisterController->registerAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[18-Jul-2015 22:45:43 UTC] PHP Fatal error:  Call to undefined method FunQ\UserBundle\UserBundle::setUsername() in /home/ubuntu/workspace/src/FunQ/UserBundle/Controller/RegisterController.php on line 21
+[18-Jul-2015 22:45:43 UTC] PHP Stack trace:
+[18-Jul-2015 22:45:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[18-Jul-2015 22:45:43 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[18-Jul-2015 22:45:43 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[18-Jul-2015 22:45:43 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[18-Jul-2015 22:45:43 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[18-Jul-2015 22:45:43 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[18-Jul-2015 22:45:43 UTC] PHP   7. FunQ\UserBundle\Controller\RegisterController->registerAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[18-Jul-2015 22:46:25 UTC] PHP Fatal error:  Call to undefined method FunQ\UserBundle\UserBundle::setUsername() in /home/ubuntu/workspace/src/FunQ/UserBundle/Controller/RegisterController.php on line 21
+[18-Jul-2015 22:46:25 UTC] PHP Stack trace:
+[18-Jul-2015 22:46:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[18-Jul-2015 22:46:25 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[18-Jul-2015 22:46:25 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[18-Jul-2015 22:46:25 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[18-Jul-2015 22:46:25 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[18-Jul-2015 22:46:25 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[18-Jul-2015 22:46:25 UTC] PHP   7. FunQ\UserBundle\Controller\RegisterController->registerAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[18-Jul-2015 22:48:24 UTC] PHP Fatal error:  Call to undefined method FunQ\UserBundle\UserBundle::setUsername() in /home/ubuntu/workspace/src/FunQ/UserBundle/Controller/RegisterController.php on line 21
+[18-Jul-2015 22:48:24 UTC] PHP Stack trace:
+[18-Jul-2015 22:48:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[18-Jul-2015 22:48:24 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[18-Jul-2015 22:48:24 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[18-Jul-2015 22:48:24 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[18-Jul-2015 22:48:24 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[18-Jul-2015 22:48:24 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[18-Jul-2015 22:48:24 UTC] PHP   7. FunQ\UserBundle\Controller\RegisterController->registerAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[18-Jul-2015 23:29:20 UTC] PHP Fatal error:  Class 'FunQ\UserBundle\Controller\RegisterFormType' not found in /home/ubuntu/workspace/src/FunQ/UserBundle/Controller/RegisterController.php on line 23
+[18-Jul-2015 23:29:20 UTC] PHP Stack trace:
+[18-Jul-2015 23:29:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[18-Jul-2015 23:29:20 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[18-Jul-2015 23:29:20 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[18-Jul-2015 23:29:20 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[18-Jul-2015 23:29:20 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[18-Jul-2015 23:29:20 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[18-Jul-2015 23:29:20 UTC] PHP   7. FunQ\UserBundle\Controller\RegisterController->registerAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[18-Jul-2015 23:29:25 UTC] PHP Fatal error:  Class 'FunQ\UserBundle\Controller\RegisterFormType' not found in /home/ubuntu/workspace/src/FunQ/UserBundle/Controller/RegisterController.php on line 23
+[18-Jul-2015 23:29:25 UTC] PHP Stack trace:
+[18-Jul-2015 23:29:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[18-Jul-2015 23:29:25 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[18-Jul-2015 23:29:25 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[18-Jul-2015 23:29:25 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[18-Jul-2015 23:29:25 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[18-Jul-2015 23:29:25 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[18-Jul-2015 23:29:25 UTC] PHP   7. FunQ\UserBundle\Controller\RegisterController->registerAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005

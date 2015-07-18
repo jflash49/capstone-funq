@@ -5,6 +5,7 @@ namespace FunQ\UserBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\AdvancedUserInterface;
 use Serializable;
+use Symfony\Component\Validator\Constraints as Assert;
 /**
  * @ORM\ Table (name="UserBundle")
  * @ORM\ Entity(repositoryClass="FunQ\UserBundle\Entity\UserBundleRepository")
@@ -44,6 +45,12 @@ class UserBundle implements AdvancedUserInterface, Serializable
     * @ORM\Column(type="boolean")
     */
     private $isActive = true;
+    
+    /**
+     * @var string
+     * @ORM\COlumn (type="string")
+     */
+     private $plainPassword;
     
     /**
      * Get id
@@ -135,7 +142,7 @@ class UserBundle implements AdvancedUserInterface, Serializable
      */ 
     public function eraseCredentials()
     {
-    // blank for now
+       $this->setPlainPassword(null);
     }
     
     
@@ -229,5 +236,16 @@ class UserBundle implements AdvancedUserInterface, Serializable
         $this->username,
         $this->password,
     ) = unserialize($serialized);
+    }
+    public function getPlainPassword()
+    {
+        return $this->plainPassword;
+    }
+    
+    public function setPlainPassword($plainPassword)
+    {
+        $this->plainPassword = $plainPassword;
+    
+        return $this;
     }
 }
