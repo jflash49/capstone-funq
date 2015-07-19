@@ -23,7 +23,7 @@ class UserController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $entities = $em->getRepository('FunQBundle:User');//->findAll();
+        $entities = $em->getRepository('FunQBundle:User')->findAll();
         /*var_dump($entities->findOneByUsernameOrEmail('user'));
         die;*/
        return $this->render('FunQBundle:User:index.html.twig', array(

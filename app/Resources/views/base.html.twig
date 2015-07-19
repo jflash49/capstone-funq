@@ -8,7 +8,14 @@
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
-    <body>
+    <body> 
+        {% if app.session.flashbag.has('Success') %}
+            <div class="alert alert-success">
+                {% for msg in app.session.flashbag.get('success') %}
+                    {{ msg }}
+                {% endfor %}
+            </div>
+        {% endif %}
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>

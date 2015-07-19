@@ -6,9 +6,13 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\AdvancedUserInterface;
 use Serializable;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+
 /**
  * @ORM\ Table (name="UserBundle")
  * @ORM\ Entity(repositoryClass="FunQ\UserBundle\Entity\UserBundleRepository")
+ * @UniqueEntity(fields="username", message="That username is taken!")
+ * @UniqueEntity(fields="email", message="That email is taken!")
  */
  
 class UserBundle implements AdvancedUserInterface, Serializable
@@ -24,6 +28,8 @@ class UserBundle implements AdvancedUserInterface, Serializable
     /**
      * @var string
      * @ORM\Column (type="string")
+     * @Assert\NotBlank(message="Put in a username you rebel scum :P")
+     * @Assert\Length(min=3, minMessage="Give us at least 3 characters!")
      */
     private $username;
 
@@ -49,8 +55,22 @@ class UserBundle implements AdvancedUserInterface, Serializable
     /**
      * @var string
      * @ORM\COlumn (type="string")
+     * /**
+     * @Assert\NotBlank
+     * @Assert\Regex(
+     *      pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$/",
+     *      message="Use 1 upper case letter, 1 lower case letter, and 1 number"
+     * )
      */
+     
      private $plainPassword;
+    
+    /**
+     * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank
+     * @Assert\Email
+     */
+    private $email;
     
     /**
      * Get id
@@ -61,12 +81,6 @@ class UserBundle implements AdvancedUserInterface, Serializable
     {
         return $this->id;
     }
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $email;
-
     /**
      * Set username
      *

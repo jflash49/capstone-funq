@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
 
 use FunQ\UserBundle\Entity\UserBundle;
 use FunQ\UserBundle\Form\RegisterFormType;
@@ -38,7 +39,24 @@ class RegisterController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
             $em->flush();
-            $url = $this->generateUrl('user');
+            
+           
+            $request->getSession()
+                ->getFlashBag()
+                ->add('success', 'Welcome to the Death Star, have a magical day!')
+            ;
+            
+            $this->authenticateUser($user);
+            $key = '_security.'.$providerKey.'.target_path';
+            $session = $this->getRequest()->getSession();
+
+             // get the URL to the last page, or fallback to the homepage
+             if ($session->has($key)) {
+                 $url = $session->get($key);
+                 $session->remove($key);
+             } else {
+                 $url = $this->generateUrl('user');
+            }//$url = $this->generateUrl('user');
             return $this->redirect($url);
         }
         return array('form' => $form->createView());
@@ -52,5 +70,13 @@ class RegisterController extends Controller
         ;
     
         return $encoder->encodePassword($plainPassword, $user->getSalt());
+    }
+    
+    private function authenticateUser(UserBundle $user)
+    {
+        $providerKey = 'secured_area'; // your firewall name
+        $token = new UsernamePasswordToken($user, null, $providerKey, $user->getRoles());
+    
+        $this->container->get('security.context')->setToken($token);
     }
 }
