@@ -1347,3 +1347,39 @@ Stack trace:
 [18-Jul-2015 23:29:25 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
 [18-Jul-2015 23:29:25 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
 [18-Jul-2015 23:29:25 UTC] PHP   7. FunQ\UserBundle\Controller\RegisterController->registerAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[20-Jul-2015 16:08:39 UTC] PHP Fatal error:  Class 'FunQ\Bundle\FunQBundle\Controller\AccessDeniedException' not found in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php on line 238
+[20-Jul-2015 16:08:39 UTC] PHP Stack trace:
+[20-Jul-2015 16:08:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[20-Jul-2015 16:08:39 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[20-Jul-2015 16:08:39 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[20-Jul-2015 16:08:39 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[20-Jul-2015 16:08:39 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[20-Jul-2015 16:08:39 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/app/bootstrap.php.cache:3005}() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[20-Jul-2015 16:08:39 UTC] PHP   7. FunQ\Bundle\FunQBundle\Controller\UserController->newAction() /home/ubuntu/workspace/app/bootstrap.php.cache:3005
+[20-Jul-2015 16:08:39 UTC] PHP   8. FunQ\Bundle\FunQBundle\Controller\UserController->enforceUserSecurity() /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php:84
+[20-Jul-2015 16:11:05 UTC] PHP Fatal error:  Cannot use Symfony\Component\Security\Core\Exception\AccessDeniedException as AccessDeniedException because the name is already in use in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php on line 12
+[20-Jul-2015 16:11:05 UTC] PHP Stack trace:
+[20-Jul-2015 16:11:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[20-Jul-2015 16:11:05 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[20-Jul-2015 16:11:05 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[20-Jul-2015 16:11:05 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[20-Jul-2015 16:11:05 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[20-Jul-2015 16:11:05 UTC] PHP   6. Symfony\Component\HttpKernel\Controller\TraceableControllerResolver->getController() /home/ubuntu/workspace/app/bootstrap.php.cache:2998
+[20-Jul-2015 16:11:05 UTC] PHP   7. Symfony\Component\HttpKernel\Controller\ControllerResolver->getController() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Controller/TraceableControllerResolver.php:46
+[20-Jul-2015 16:11:05 UTC] PHP   8. Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver->createController() /home/ubuntu/workspace/app/cache/dev/classes.php:2052
+[20-Jul-2015 16:11:05 UTC] PHP   9. class_exists() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[20-Jul-2015 16:11:05 UTC] PHP  10. spl_autoload_call() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[20-Jul-2015 16:11:05 UTC] PHP  11. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[20-Jul-2015 16:11:53 UTC] PHP Fatal error:  Cannot use Symfony\Component\Finder\Exception\AccessDeniedException as AccessDeniedException because the name is already in use in /home/ubuntu/workspace/src/FunQ/Bundle/FunQBundle/Controller/UserController.php on line 13
+[20-Jul-2015 16:11:53 UTC] PHP Stack trace:
+[20-Jul-2015 16:11:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[20-Jul-2015 16:11:53 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/web/app_dev.php:28
+[20-Jul-2015 16:11:53 UTC] PHP   3. Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:2365
+[20-Jul-2015 16:11:53 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/app/bootstrap.php.cache:3116
+[20-Jul-2015 16:11:53 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/app/bootstrap.php.cache:2967
+[20-Jul-2015 16:11:53 UTC] PHP   6. Symfony\Component\HttpKernel\Controller\TraceableControllerResolver->getController() /home/ubuntu/workspace/app/bootstrap.php.cache:2998
+[20-Jul-2015 16:11:53 UTC] PHP   7. Symfony\Component\HttpKernel\Controller\ControllerResolver->getController() /home/ubuntu/workspace/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Controller/TraceableControllerResolver.php:46
+[20-Jul-2015 16:11:53 UTC] PHP   8. Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver->createController() /home/ubuntu/workspace/app/cache/dev/classes.php:2052
+[20-Jul-2015 16:11:53 UTC] PHP   9. class_exists() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[20-Jul-2015 16:11:53 UTC] PHP  10. spl_autoload_call() /home/ubuntu/workspace/app/cache/dev/classes.php:2398
+[20-Jul-2015 16:11:53 UTC] PHP  11. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/app/cache/dev/classes.php:2398

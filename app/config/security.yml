@@ -12,7 +12,7 @@ security:
 
     # http://symfony.com/doc/current/book/security.html#hierarchical-roles
     role_hierarchy:
-        ROLE_ADMIN:       ROLE_USER
+        ROLE_ADMIN:       [ROLE_USER, ROLE_EVENT_CREATE, ROLE_ALLOWED_TO_SWITCH]
         ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
 
     # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
@@ -36,7 +36,7 @@ security:
         # demo_login:
         #     pattern:  ^/demo/secured/login$
         #     security: false
-
+        
         # secures part of the application
        secured_area:    #demo_secured_area:
             pattern:    ^/ #demo/secured/
@@ -44,7 +44,8 @@ security:
             # are route names and that they are specified in the AcmeDemoBundle
             form_login:
                 check_path: _login_check
-                login_path: /login_form#_demo_login /my-login-url
+                login_path: /login      
+            #_demo_login /my-login-url
                 
             logout:
                 path:   logout#_demo_logout
@@ -52,11 +53,17 @@ security:
             anonymous: ~ #uncommented
             #http_basic:
             #    realm: "Secured Demo Area"
+            switch_user: ~
 
     # with these settings you can restrict or allow access for different parts
     # of your application based on roles, ip, host or methods
     # http://symfony.com/doc/current/cookbook/security/access_control.html
     access_control:
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/register, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/(css|js), roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/(_wdt|_profiler), roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/, roles: ROLE_USER }
     #uncommented  login changed to new #, requires_channel: https }
        # - { path: ^/new, roles: ROLE_USER }
        # - { path: ^/create, roles: ROLE_USER }

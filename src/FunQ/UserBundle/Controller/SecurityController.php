@@ -10,7 +10,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class SecurityController extends Controller
 {
     /**
-     * @Route("/login",name="login_form")
+     * @Route("/login", name="login_form")
      * @Template
      */
      public function loginAction(Request $request)

@@ -8,6 +8,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use FunQ\Bundle\FunQBundle\Entity\User;
 use FunQ\Bundle\FunQBundle\Form\UserType;
 
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
+
 /**
  * User controller.
  *
@@ -40,7 +42,7 @@ class UserController extends Controller
         $form = $this->createCreateForm($entity);
         $form->handleRequest($request);
         
-         $this->enforceUserSecurity();
+        $this->enforceUserSecurity('ROLE_USER_CREATE');
 
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
@@ -229,11 +231,13 @@ class UserController extends Controller
         ;
     }
     
-    private function enforceUserSecurity()
+    private function enforceUserSecurity($role = 'ROLE_USER')
     {
         $securityContext = $this->container->get('security.context');
-        if (!$securityContext->isGranted('ROLE_USER')) {
-            throw new AccessDeniedException('Need ROLE_USER!');
+        if (!$securityContext->isGranted('$role')) {
+            // in Symfony 2.5
+            // throw $this->createAccessDeniedException('message!');
+            throw new AccessDeniedException('Need '.$role);
     }
 }
 }
