@@ -3,7 +3,7 @@
 namespace FunQ\Bundle\FunQBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
+use FunQ\UserBundle\Entity\UserBundle;
 
 /**
  * 
@@ -87,7 +87,33 @@ class User
      * @var string
      */
     private $password;
-
+    
+    /**
+     * 
+     * @ORM\ManyToOne(targetEntity="FunQ\UserBundle\Entity\UserBundle")
+     * @ORM\JoinColumn(onDelete="CASCADE")
+     */
+     private $owner;
+     
+    /**
+     * 
+     * @return UserBundle
+     */ 
+     
+    public function getOwner()
+    {
+        return $this->owner;
+    }
+    /**
+     * 
+     * @param UserBundle $owner
+     */ 
+    public function setOwner(UserBundle $owner)
+    {
+        $this->owner = $owner;
+    }
+         
+     
     /**
      * Get id
      *

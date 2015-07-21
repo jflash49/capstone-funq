@@ -1,6 +1,6 @@
 <?php 
 // src/FunQ/UserBundle/DataFixtures/ORM/LoadUsers.php
-namespace FunQ\UserBundle\DataFixtures\ORM;
+namespace FunQ\Bundle\FunQBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -9,10 +9,24 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 
-class LoadUsers implements FixtureInterface, ContainerAwareInterface, OrderedFixtureInterface
+class LoadUsers implements FixtureInterface, OrderedFixtureInterface
 {
     private $container;
+        
+    public function load(ObjectManager $manager)
+    {
+        $wayne = $manager->getRepository('UserBundle:User')
+            ->findOneByUsernameOrEmail('wayne');
+        // ...
     
+        $event1->setOwner($wayne);
+        $event2->setOwner($wayne);
+        
+         $wayne->setPassword($this-> encodePassword($user,'darthpass'));
+        // ...
+        $manager->flush();
+    }
+    /*
     public function load(ObjectManager $manager)
     {
         $user = new User();
@@ -40,10 +54,10 @@ class LoadUsers implements FixtureInterface, ContainerAwareInterface, OrderedFix
         ;
     
         return $encoder->encodePassword($plainPassword, $user->getSalt());
-    }
+    }*/
     
      public function getOrder()
     {
-        return 10;
+        return 20;
     }
 }

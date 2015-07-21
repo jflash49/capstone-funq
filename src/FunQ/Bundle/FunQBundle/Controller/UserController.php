@@ -3,7 +3,9 @@
 namespace FunQ\Bundle\FunQBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+//use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use FunQ\Bundle\FunQBundle\Controller\Controller;
+
 
 use FunQ\Bundle\FunQBundle\Entity\User;
 use FunQ\Bundle\FunQBundle\Form\UserType;
@@ -28,7 +30,8 @@ class UserController extends Controller
         $entities = $em->getRepository('FunQBundle:User')->findAll();
         /*var_dump($entities->findOneByUsernameOrEmail('user'));
         die;*/
-       return $this->render('FunQBundle:User:index.html.twig', array(
+       // $user = $this->getUser();
+        return $this->render('FunQBundle:User:index.html.twig', array(
             'entities' => $entities,
         ));
     }
@@ -45,6 +48,9 @@ class UserController extends Controller
         $this->enforceUserSecurity('ROLE_USER_CREATE');
 
         if ($form->isValid()) {
+            $user= $this->getUserBundle();
+            $entity->setOwner($user);
+            
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
             $em->flush();
@@ -129,6 +135,7 @@ class UserController extends Controller
         if (!$entity) {
             throw $this->createNotFoundException('Unable to find User entity.');
         }
+        $this->enforceOwnerSecurity($entity);
 
         $editForm = $this->createEditForm($entity);
         $deleteForm = $this->createDeleteForm($id);
@@ -173,6 +180,8 @@ class UserController extends Controller
             throw $this->createNotFoundException('Unable to find User entity.');
         }
 
+        $this->enforceOwnerSecurity($entity);
+        
         $deleteForm = $this->createDeleteForm($id);
         $editForm = $this->createEditForm($entity);
         $editForm->handleRequest($request);
@@ -206,6 +215,8 @@ class UserController extends Controller
             if (!$entity) {
                 throw $this->createNotFoundException('Unable to find User entity.');
             }
+            $this->enforceOwnerSecurity($entity);
+
 
             $em->remove($entity);
             $em->flush();
@@ -233,11 +244,26 @@ class UserController extends Controller
     
     private function enforceUserSecurity($role = 'ROLE_USER')
     {
-        $securityContext = $this->container->get('security.context');
+       /* $securityContext = $this->container->get('security.context');
         if (!$securityContext->isGranted('$role')) {
             // in Symfony 2.5
             // throw $this->createAccessDeniedException('message!');
             throw new AccessDeniedException('Need '.$role);
+        }*/
+        if (!$this->getSecurityContext()->isGranted($role)) {
+            // in Symfony 2.5
+            // throw $this->createAccessDeniedException('message!');
+            throw new AccessDeniedException('Need '.$role);
+        }
     }
-}
+    private function enforceOwnerSecurity(User $event)
+    {
+        $user = $this->getUser();
+    
+        if ($user != $event->getOwner()) {
+            // if you're using 2.5 or higher
+            // throw $this->createAccessDeniedException('You are not the owner!!!');
+            throw new AccessDeniedException('You are not the owner!!!');
+        }
+    }
 }

@@ -1,7 +1,11 @@
 <?php 
+// src/FunQ/UserBundle/Controller/SecurityController.php
 namespace FunQ\UserBundle\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+//use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+use FunQ\Bundle\FunQBundle\Controller\Controller;
+
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\Security\Core\SecurityContextInterface;
 use Symfony\Component\HttpFoundation\Request;

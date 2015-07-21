@@ -8,6 +8,7 @@ FunQ\Bundle\FunQBundle\Entity\User:
             id: true
             generator:
                 strategy: AUTO
+    
     fields:
         username:
             type: string
@@ -42,4 +43,10 @@ FunQ\Bundle\FunQBundle\Entity\User:
         password:
             type: string
             length: 255
+    manyToOne:
+        owner:
+            targetEntity: FunQ\UserBundle\Entity\UserBundle
+            joinColumn:
+                onDelete: CASCADE
+            
     lifecycleCallbacks: {  }
